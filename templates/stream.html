@@ -1,0 +1,26 @@
+<html>
+ <head>
+ <title>Live Stream Example</title>
+ </head>
+ <body>
+    <center>
+    <h1>Live Feed Demonstration</h1>
+    <hr width=500>
+    <form action="/menu" method="POST">
+        <button name="back" type="submit" class="btn">Back</button>
+    </form>
+    <hr width=500>
+    <p>The stream will appear below. If not, please let me know.
+        For some reason, styling broke our stream implementation, which is
+        why this page is not stylizied.<br>
+        <font color=red><b>IF YOU ARE USING GOOGLE CHROME, click the lock icon to the left of the URL bar, click <i>Site Settings</i>, scroll down to <i>
+            Insecure content</i>, and choose <i>Allow</i>, then refresh the page.<br><br>
+	    IF YOU ARE USING GOOGLE CHROME: The stream may not start right away. If the stream loads and you see green pixalation, please press the play button right away.<br><br>
+            If the stream appears pixalated and/or green, give it at least 30 seconds to load.
+            <br><br>If the stream appears to freeze, you must let it buffer. Wait at least 30 seconds for it to buffer and resume</b>
+      </font>     
+    </p>
+ <video id="stream" width="640" height="480" src="http://cnttest.ddns.net:8081/stream" type="video/ogg; codecs=theora" autoplay="autoplay" controls/>
+</center>
+ </body>
+</html>
